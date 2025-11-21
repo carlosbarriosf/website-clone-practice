@@ -22,6 +22,12 @@ import { FaStripe } from "react-icons/fa";
 import { RiFileExcel2Fill } from "react-icons/ri";
 import { FaTwitter } from "react-icons/fa";
 import { SiNubank } from "react-icons/si";
+import { CiCreditCard1 } from "react-icons/ci";
+import { LuFileChartColumn } from "react-icons/lu";
+import { ImCoinEuro } from "react-icons/im";
+import { RiArrowUpFill } from "react-icons/ri";
+import { GoGear } from "react-icons/go";
+import { HiOutlineSupport } from "react-icons/hi";
 import SvgCircleBackground from "../components/SvgCircleBackground";
 import Image from "next/image";
 
@@ -327,7 +333,91 @@ const Featured = () => {
           </div>
         </div>
         <div className="h-[480px] col-span-5 rounded-2xl border border-gray-400/30 bg-zinc-800/50 grid grid-rows-3">
-          <div className="row-span-2"></div>
+          <div className="row-span-2 relative overflow-hidden">
+            <div className="absolute z-10 w-[250px] h-[220px] bg-zinc-900/85 top-5 left-20 border border-zinc-400/20 rounded-lg px-2 py-1 text-zinc-400 text-xs">
+              <div className="border-b border-zinc-700 px-2 py-2">
+                What would you like to do?
+              </div>
+              <div className="my-2">
+                <h3 className="text-[9px] text-zinc-600 mb-1">
+                  Frequently used
+                </h3>
+                <div className="flex flex-col">
+                  <div className="w-full flex justify-between p-1 rounded-md">
+                    <div className="flex items-center gap-1">
+                      <CiCreditCard1 size={16} />
+                      <p>View active Cards</p>
+                    </div>
+                    <div>
+                      <div className="bg-gray-700 py-[0.5px] px-1 rounded-xs text-zinc-300">
+                        C
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full flex justify-between bg-zinc-700/60 p-1 rounded-md text-zinc-300">
+                    <div className="flex items-center gap-1">
+                      <LuFileChartColumn size={16} />
+                      <p>View all summary reports</p>
+                    </div>
+                    <div className="flex gap-1">
+                      <div className="bg-gray-700 py-[0.5px] px-px rounded-xs text-zinc-300 flex items-center">
+                        <RiArrowUpFill size={14} />
+                      </div>
+                      <div className="bg-gray-700 py-[0.5px] px-1 rounded-xs text-zinc-300">
+                        R
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full flex justify-between p-1 rounded-md">
+                    <div className="flex items-center gap-1">
+                      <ImCoinEuro size={16} />
+                      <p>Manage Expenses</p>
+                    </div>
+                    <div className="bg-gray-700 py-[0.5px] px-1 rounded-xs text-zinc-300">
+                      E
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="">
+                <h3 className="text-[9px] text-zinc-600 mb-1">
+                  Settings & Help
+                </h3>
+                <div className="flex flex-col">
+                  <div className="w-full flex justify-between p-1 rounded-md">
+                    <div className="flex items-center gap-1">
+                      <GoGear size={16} />
+                      <p>Manage settings</p>
+                    </div>
+                    <div className="flex gap-1">
+                      <div className="bg-gray-700 py-[0.5px] px-px rounded-xs text-zinc-300 flex items-center">
+                        <RiArrowUpFill size={14} />
+                      </div>
+                      <div className="bg-gray-700 py-[0.5px] px-1 rounded-xs text-zinc-300">
+                        S
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full flex justify-between p-1 rounded-md">
+                    <div className="flex items-center gap-1">
+                      <HiOutlineSupport size={16} />
+                      <p>Contact support</p>
+                    </div>
+                    <div>
+                      <div className="bg-gray-700 py-[0.5px] px-1 rounded-xs text-zinc-300">
+                        H
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img
+              src="/keyboard-bg.png"
+              alt="Keyboard"
+              className="absolute w-[600px] h-[180px] left-[60px] top-[100px] rounded-xl"
+            />
+          </div>
           <div className="py-4 px-8">
             <h3 className="text-gray-200 text-lg font-semibold">
               You’re in control

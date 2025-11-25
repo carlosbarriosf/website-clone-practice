@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import SvgBackground from "./components/SvgBackground";
 import Featured from "./sections/Featured";
+import Genius from "./sections/Genius";
 import Hero from "./sections/Hero";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
           <Hero />
         </div>
         <Featured />
+        <Genius />
       </main>
     </>
   );

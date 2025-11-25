@@ -314,7 +314,9 @@ const Featured = () => {
               {Apps.map((logo, i) => (
                 <div
                   key={i}
-                  className={`text-3xl text-zinc-600 w-16 h-16 bg-black rounded-full flex items-center justify-center border border-zinc-200/20 self-${logo.position} hover:scale-[1.1] transition-all duration-300 cursor-pointer`}
+                  className={`text-3xl text-zinc-600 w-16 h-16 bg-black rounded-full flex items-center justify-center border border-zinc-200/20 ${
+                    logo.position == "start" ? "self-start" : "self-end"
+                  } hover:scale-[1.1] transition-all duration-300 cursor-pointer`}
                 >
                   {logo.icon}
                 </div>

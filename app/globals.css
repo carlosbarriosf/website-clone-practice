@@ -16,3 +16,50 @@ html {
     rgba(20, 0, 255, 0.3) 100%
   );
 }
+
+.gradient-blob {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  bottom: -250px;
+  left: 0;
+  background: radial-gradient(
+    circle at center,
+    oklch(60.9% 0.126 221.723),
+    rgba(0, 0, 0, 0) 70%
+  );
+  filter: blur(120px);
+  opacity: 0.6;
+  pointer-events: none;
+}
+.gradient-blob2 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  bottom: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: radial-gradient(
+    circle at center,
+    oklch(60.9% 0.126 221.723),
+    rgba(0, 0, 0, 0) 70%
+  );
+  filter: blur(120px);
+  opacity: 0.6;
+  pointer-events: none;
+}
+.gradient-blob3 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  bottom: -200px;
+  right: 0;
+  background: radial-gradient(
+    circle at center,
+    oklch(48.8% 0.243 264.376),
+    rgba(0, 0, 0, 0) 70%
+  );
+  filter: blur(120px);
+  opacity: 0.6;
+  pointer-events: none;
+}

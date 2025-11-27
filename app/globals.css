@@ -63,3 +63,53 @@ html {
   opacity: 0.6;
   pointer-events: none;
 }
+
+@keyframes title_animation {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes paragraph_animation {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.title_animation {
+  animation-name: title_animation;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
+}
+
+.paragraph_animation {
+  animation-name: paragraph_animation;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  animation-delay: 800ms;
+}
+
+.appear {
+  animation-name: appear;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-delay: 1500ms;
+}

@@ -5,19 +5,21 @@ import { IoArrowDown } from "react-icons/io5";
 const Hero = () => {
   return (
     <section className="relative pt-20 z-10">
-      <h1 className="text-transparent bg-linear-to-br from-white to-zinc-500 bg-clip-text text-center mx-auto font-semibold text-7xl max-w-[20ch] tracking-tighter">
+      <h1 className="text-transparent bg-linear-to-br from-white to-zinc-500 bg-clip-text text-center mx-auto font-semibold text-7xl max-w-[20ch] tracking-tighter title_animation">
         Unlock a smarter way to handle your finances
       </h1>
-      <p className="text-zinc-400 max-w-[60ch] mx-auto text-center mt-8 text-xl tracking-tight">
+      <p className="text-zinc-400 max-w-[60ch] mx-auto text-center mt-8 text-xl tracking-tight opacity-0 paragraph_animation">
         Outgrow clunky spreadsheets and outdated dashboards. With Cobaltito,
         anyone can run their business finances confidently — clear, fast, and
         beautifully simple.
       </p>
       <div className="flex flex-col items-center justify-center my-12 gap-8">
-        <GlowingButton />
+        <div className="paragraph_animation opacity-0">
+          <GlowingButton />
+        </div>
         <a
           href="#featured"
-          className="text-gray-400 text-sm hover:text-white transition-all duration-500 flex flex-col justify-center items-center gap-2 group"
+          className="text-gray-400 text-sm hover:text-white transition-all duration-500 flex flex-col justify-center items-center gap-2 group opacity-0 appear"
         >
           <span>Learn more</span>
           <IoArrowDown
@@ -26,7 +28,7 @@ const Hero = () => {
           />
         </a>
       </div>
-      <div className="max-w-7xl mx-auto px-12">
+      <div className="max-w-7xl mx-auto px-12 opacity-0 appear">
         <img
           src="/coolmockup.png"
           alt=""

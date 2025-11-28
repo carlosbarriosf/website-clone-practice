@@ -97,7 +97,7 @@ const Apps = [
 const Featured = () => {
   return (
     <section className="pt-48 bg-black" id="featured">
-      <div className="grid grid-cols-2 grid-rows-2 gap-y-32 text-white max-w-7xl mx-auto px-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-x-2 gap-y-32 text-white max-w-7xl mx-auto px-12">
         <div>
           <h2 className="text-5xl font-semibold tracking-tighter text-transparent bg-linear-to-br from-white to-zinc-400 bg-clip-text pb-2">
             Who said finance has to <br /> feel complicated?
@@ -130,9 +130,9 @@ const Featured = () => {
         </div>
       </div>
       {/* Cards grid */}
-      <div className="grid grid-cols-12 gap-12 max-w-7xl mx-auto px-12 mt-12">
+      <div className="grid grid-cols-6 lg:grid-cols-12 gap-4 lg:gap-6 max-w-7xl mx-auto px-4 lg:px-12 mt-12">
         {/* 1st card*/}
-        <div className="h-[480px] col-span-4 rounded-2xl border border-gray-400/30 bg-zinc-800/50 grid grid-rows-3">
+        <div className="h-[480px] col-span-6 md:col-span-3 lg:col-span-5 xl:col-span-4 rounded-2xl border border-gray-400/30 bg-zinc-800/50 grid grid-rows-3">
           <div className="row-span-2 relative">
             <SvgBackground width={30} height={70} id={"card"} />
             <div className="absolute z-20 top-8 right-6 w-[230px] py-3 px-4 h-[300px] border border-zinc-400/25 bg-zinc-900 rounded-lg text-zinc-500 overflow-hidden mask-[linear-gradient(to_bottom,white_0%,white_75%,transparent_100%)] pointer-events-none">
@@ -236,7 +236,7 @@ const Featured = () => {
           </div>
         </div>
 
-        <div className="h-[480px] col-span-4 rounded-2xl border border-gray-400/30 bg-zinc-800/50 grid grid-rows-3">
+        <div className="h-[480px] col-span-6 md:col-span-3 lg:col-span-7 xl:col-span-4 rounded-2xl border border-gray-400/30 bg-zinc-800/50 grid grid-rows-3">
           <div className="row-span-2 relative overflow-hidden mask-[linear-gradient(to_bottom,white_0%,white_80%,transparent_100%)]">
             <SvgCircleBackground />
             <Image
@@ -258,7 +258,8 @@ const Featured = () => {
             </p>
           </div>
         </div>
-        <div className="h-[480px] col-span-4 rounded-2xl border border-gray-400/30 bg-zinc-800/50 grid grid-rows-3">
+
+        <div className="h-[480px] col-span-6 md:col-span-3 lg:col-span-5 xl:col-span-4 order-3  md:order-4 xl:order-3  rounded-2xl border border-gray-400/30 bg-zinc-800/50 grid grid-rows-3">
           <div className="row-span-2 relative mask-[linear-gradient(to_bottom,transparent_0%,white_40%,white_50%,transparent_100%)] overflow-hidden">
             <div className="absolute right-0 top-1 p-3 text-zinc-500">
               <div className="bg-zinc-900 rounded-md w-[300px] h-[132px] border border-zinc-400/15 mb-4 py-2 px-1">
@@ -308,7 +309,8 @@ const Featured = () => {
             </p>
           </div>
         </div>
-        <div className="h-[480px] col-span-7 rounded-2xl border border-gray-400/30 bg-zinc-800/50 grid grid-rows-3">
+
+        <div className="h-[480px] order-4 md:order-5 xl:order-4 col-span-full xl:col-span-7 rounded-2xl border border-gray-400/30 bg-zinc-800/50 grid grid-rows-3">
           <div className="row-span-2">
             <div className="grid grid-cols-5 justify-items-center h-full mask-radial-at-center mask-radial-from-10% mask-radial-to-transparent">
               {Apps.map((logo, i) => (
@@ -334,7 +336,8 @@ const Featured = () => {
             </p>
           </div>
         </div>
-        <div className="h-[480px] col-span-5 rounded-2xl border border-gray-400/30 bg-zinc-800/50 grid grid-rows-3">
+
+        <div className="h-[480px] order-5 md:order-3 xl:order-5 col-span-full md:col-span-3 lg:col-span-7 xl:col-span-5 rounded-2xl border border-gray-400/30 bg-zinc-800/50 grid grid-rows-3">
           <div className="row-span-2 relative overflow-hidden">
             <div className="absolute z-10 w-[250px] h-[220px] bg-zinc-900/85 top-5 left-20 border border-zinc-400/20 rounded-lg px-2 py-1 text-zinc-400 text-xs">
               <div className="border-b border-zinc-700 px-2 py-2">

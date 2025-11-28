@@ -7,7 +7,7 @@ import Typewriter from "../components/Typewriter";
 const Genius = () => {
   return (
     <section className="pt-48 bg-black" id="genius">
-      <div className="grid grid-cols-2 gap-y-32 text-white max-w-7xl mx-auto px-12 mb-12">
+      <div className=" gap-y-32 text-white max-w-7xl mx-auto px-12 mb-12">
         <div>
           <div>
             <h2 className="text-5xl font-semibold tracking-tighter text-transparent bg-linear-to-br from-white to-zinc-400 bg-clip-text pb-2 mb-2">
@@ -15,7 +15,7 @@ const Genius = () => {
             </h2>
           </div>
           <div>
-            <p className="text-zinc-500 text-lg tracking-wide">
+            <p className="text-zinc-500 text-lg tracking-wide max-w-[50ch]">
               Our AI-powered assistant helps you{" "}
               <span className="text-gray-300 font-semibold">
                 interpret financial information and highlights patterns
@@ -25,8 +25,8 @@ const Genius = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-12 max-w-7xl mx-auto px-12">
-        <div className="h-[480px]  rounded-2xl border border-gray-400/30 bg-zinc-800/50 grid grid-rows-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto px-12">
+        <div className="h-[480px] pb-8 md:pb-0 rounded-2xl border border-gray-400/30 bg-zinc-800/50 grid grid-rows-4">
           <div className="row-span-3 relative overflow-hidden mask-[linear-gradient(to_bottom,white_0%,white_65%,transparent_100%)] pointer-events-none">
             <div className="relative w-[90%] h-[90%] mx-auto mt-6 rounded-2xl">
               <SvgDiagonalBg />
@@ -78,7 +78,7 @@ const Genius = () => {
               </div>
             </div>
           </div>
-          <div className="py-4 px-8">
+          <div className="px-8">
             <h3 className="text-gray-200 text-lg font-semibold">
               Smart forecasting
             </h3>
@@ -89,7 +89,7 @@ const Genius = () => {
             </p>
           </div>
         </div>
-        <div className="h-[480px]  rounded-2xl border border-gray-400/30 bg-zinc-800/50 grid grid-rows-4">
+        <div className="h-[480px] pb-8 md:pb-0 rounded-2xl border border-gray-400/30 bg-zinc-800/50 grid grid-rows-4">
           <div className="row-span-3 px-8 pb-12">
             <div className="relative w-full h-full flex overflow-hidden">
               <svg
@@ -142,7 +142,7 @@ const Genius = () => {
               </div>
             </div>
           </div>
-          <div className="py-4 px-8">
+          <div className="px-8">
             <h3 className="text-gray-200 text-lg font-semibold">
               Chat with Genius
             </h3>
